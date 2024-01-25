@@ -17,7 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);;
 
-Route::get('/add-doctor', [AdminController::class, 'add_view']);;
 
 Route::middleware([
     'auth:sanctum',
@@ -25,4 +24,6 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/home', [HomeController::class, 'redirect'])->name('home');
+    Route::get('/add-doctor', [AdminController::class, 'add_view']);
+    Route::post('/upload-doctor', [AdminController::class, 'upload']);
 });
