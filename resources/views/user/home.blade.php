@@ -1,3 +1,6 @@
+<x-app-layout>
+</x-app-layout>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +13,11 @@
 
     <title>One Health - Medical Center HTML5 Template</title>
 
-    <link rel="stylesheet" href="../assets/css/maicons.css">
+    <link rel="stylesheet" href="/assets/css/maicons.css">
 
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
 
-    <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="/assets/vendor/owl-carousel/css/owl.carousel.css">
 
     <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
 
@@ -85,21 +88,6 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
 
-                    @if (Route::has('login'))
-                        @auth
-                            <x-app-layout>
-
-                            </x-app-layout>
-                        @else
-                            <li class="nav-item">
-                                <a class="btn btn-primary ml-lg-3 font-weight-bold"
-                                   href="{{ route('login') }}">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="btn btn-primary ml-lg-3 font-weight-bold" href="{{route('register')}}">Register</a>
-                            </li>
-                        @endauth
-                    @endif
                 </ul>
             </div> <!-- .navbar-collapse -->
         </div> <!-- .container -->
