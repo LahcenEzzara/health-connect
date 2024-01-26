@@ -15,5 +15,14 @@
             </a>
         </li>
 
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{url("show-appointment")}}">
+                <i class="mdi mdi-account-plus menu-icon"></i>
+
+                <span class="menu-title">Appointments</span>
+            </a>
+        </li>
+
     </ul>
 </nav>
