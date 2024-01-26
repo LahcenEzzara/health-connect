@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Doctor;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -10,7 +11,8 @@ class HomeController extends Controller
     {
         if (Auth::id()) {
             if (Auth::user()->usertype == '0') {
-                return view('user.home');
+                $doctor = doctor::all();
+                return view('user.home', compact('doctor'));
             } else {
                 return view('admin.home');
             }
@@ -21,6 +23,14 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('welcome');
+
+        if (Auth::id()) {
+            return redirect('home');
+        } else {
+            $doctor = doctor::all();
+            return view('welcome', compact('doctor'));
+        }
+
+
     }
 }
