@@ -18,9 +18,17 @@
 
         <li class="nav-item">
             <a class="nav-link" href="{{url("show-appointment")}}">
-                <i class="mdi mdi-account-plus menu-icon"></i>
+                <i class="mdi mdi-access-point menu-icon"></i>
 
                 <span class="menu-title">Appointments</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{url("show-doctor")}}">
+                <i class="mdi mdi-account-multiple menu-icon"></i>
+
+                <span class="menu-title">All Doctors</span>
             </a>
         </li>
 

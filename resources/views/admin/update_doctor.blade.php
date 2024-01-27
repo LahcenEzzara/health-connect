@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@include('admin.head')
+@include('admin.add_doctor.head')
 
 <body>
 <div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
-
+    <!-- partial:../../partials/_navbar.html -->
     @include('admin.navbar')
 
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_settings-panel.html -->
-
+        <!-- partial:../../partials/_settings-panel.html -->
         <div id="right-sidebar" class="settings-panel">
             <i class="settings-close ti-close"></i>
             <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="/admin/assets/#todo-section" role="tab"
+                    <a class="nav-link active" id="todo-tab" data-bs-toggle="tab" href="#todo-section" role="tab"
                        aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="/admin/assets/#chats-section" role="tab"
+                    <a class="nav-link" id="chats-tab" data-bs-toggle="tab" href="#chats-section" role="tab"
                        aria-controls="chats-section">CHATS</a>
                 </li>
             </ul>
@@ -32,7 +30,8 @@
                         <form class="form w-100">
                             <div class="form-group d-flex">
                                 <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
-                                <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                                <button type="submit" class="add btn btn-primary todo-list-add-btn"
+                                        id="add-task">Add</button>
                             </div>
                         </form>
                     </div>
@@ -107,7 +106,9 @@
                 <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
                     <div class="d-flex align-items-center justify-content-between border-bottom">
                         <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
-                        <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See All</small>
+                        <small
+                            class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 fw-normal">See
+                            All</small>
                     </div>
                     <ul class="chat-list">
                         <li class="list active">
@@ -173,18 +174,42 @@
             </div>
         </div>
         <!-- partial -->
-        <!-- partial:partials/_sidebar.html -->
+        <!-- partial:../../partials/_sidebar.html -->
+
         @include('admin.sidebar')
         <!-- partial -->
-        @include('admin.body')
+        <div class="main-panel">
+            <div class="content-wrapper">
+                <div class="row">
+                    <div class="col-md-6 grid-margin stretch-card"
+                         style="margin: 0 auto; display: flex; justify-content: center;">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Add Doctor</h4>
+
+                                @include('admin.update_doctor_form')
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:../../partials/_footer.html -->
+            @include('admin.footer')
+            <!-- partial -->
+        </div>
         <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->
 </div>
 <!-- container-scroller -->
+<!-- plugins:js -->
 
-@include('admin.script')
+@include('admin.add_doctor.script')
 
+<!-- End custom js for this page-->
 </body>
 
 </html>

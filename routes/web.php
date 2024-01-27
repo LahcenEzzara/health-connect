@@ -25,10 +25,22 @@ Route::get('/out', function () {
     return view('out');
 });
 
-Route::get('/my-appointment', [HomeController::class, 'my_appointment']);
-Route::get('/cancel-appointment/{id}', [HomeController::class, 'cancel_appointment']);
+Route::get('/my-appointment', [HomeController::class, 'my_appointment'])->middleware('auth');
+Route::get('/cancel-appointment/{id}', [HomeController::class, 'cancel_appointment'])->middleware('auth');
 
-Route::get('/show-appointment', [AdminController::class, 'show_appointment']);
+Route::get('/show-appointment', [AdminController::class, 'show_appointment'])->middleware('auth');
+
+
+Route::get('/approve-appointment/{id}', [AdminController::class, 'approve_appointment'])->middleware('auth');
+Route::get('/cancel-appointment/{id}', [AdminController::class, 'cancel_appointment'])->middleware('auth');
+
+Route::get('/show-doctor', [AdminController::class, 'show_doctor'])->middleware('auth');
+
+Route::get('/update-doctor/{id}', [AdminController::class, 'update_doctor'])->middleware('auth');
+
+Route::get('/delete-doctor/{id}', [AdminController::class, 'delete_doctor'])->middleware('auth');
+
+Route::post('/edit-doctor/{id}', [AdminController::class, 'edit_doctor'])->middleware('auth');
 
 Route::middleware([
     'auth:sanctum',
