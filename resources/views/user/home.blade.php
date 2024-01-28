@@ -8,7 +8,7 @@
 
     <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-    <title>One Health - Medical Center HTML5 Template</title>
+    <title>HealthConnect - Healthy Living</title>
 
     <link rel="stylesheet" href="/assets/css/maicons.css">
 
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
 
     <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="shortcut icon" href="healthconnect.png" />
 </head>
 <body>
 
@@ -31,9 +32,9 @@
             <div class="row">
                 <div class="col-sm-8 text-sm">
                     <div class="site-info">
-                        <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+                        <a href="#"><span class="mai-call text-primary"></span> 06 00 00 00 00</a>
                         <span class="divider">|</span>
-                        <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+                        <a href="#"><span class="mai-mail text-primary"></span> contact@health-connect.dev</a>
                     </div>
                 </div>
                 <div class="col-sm-4 text-right text-sm">
@@ -50,7 +51,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+            <a class="navbar-brand" href="#"><span class="text-primary">Health</span>Connect</a>
 
             <form action="#">
                 <div class="input-group input-navbar">
@@ -146,12 +147,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 py-3 wow fadeInUp">
-                    <h1>Welcome to Your Health <br> Center</h1>
-                    <p class="text-grey mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-                        et accusam et justo duo dolores et ea rebum. Accusantium aperiam earum ipsa eius, inventore nemo
-                        labore eaque porro consequatur ex aspernatur. Explicabo, excepturi accusantium! Placeat
-                        voluptates esse ut optio facilis!</p>
+                    <h1>Welcome to Your Health <br> Web Center</h1>
+                    <p class="text-grey mb-4">The HealthConnect Appointment Scheduling System is a web-based platform designed to streamline the process of scheduling health appointments. It aims to provide a user-friendly interface for patients to manage their health data and schedule appointments with healthcare providers.</p>
                     <a href="about.html" class="btn btn-primary">Learn More</a>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">

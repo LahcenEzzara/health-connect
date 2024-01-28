@@ -2,7 +2,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin2 </title>
+    <title>HealthConnect - Healthy Living</title>
+
     <!-- plugins:css -->
     <link rel="stylesheet" href="/admin/assets/vendors/feather/feather.css">
     <link rel="stylesheet" href="/admin/assets/vendors/mdi/css/materialdesignicons.min.css">
@@ -18,5 +19,5 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="/admin/assets/css/vertical-layout-light/style.css">
     <!-- endinject -->
-    <link rel="shortcut icon" href="/admin/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="healthconnect.png" />
 </head>

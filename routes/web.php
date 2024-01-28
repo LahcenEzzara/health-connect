@@ -42,11 +42,13 @@ Route::get('/delete-doctor/{id}', [AdminController::class, 'delete_doctor'])->mi
 
 Route::post('/edit-doctor/{id}', [AdminController::class, 'edit_doctor'])->middleware('auth');
 
+
+Route::get('/home', [HomeController::class, 'redirect'])->name('home')->middleware('auth');
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/home', [HomeController::class, 'redirect'])->name('home');
+
 
 });

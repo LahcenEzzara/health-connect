@@ -8,7 +8,7 @@
 
     <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-    <title>One Health - Medical Center HTML5 Template</title>
+    <title>HealthConnect - Healthy Living</title>
 
     <link rel="stylesheet" href="../assets/css/maicons.css">
 
@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
 
     <link rel="stylesheet" href="../assets/css/theme.css">
+
+
+    <link rel='icon' type='image/png' href='healthconnect.png'>
+
 </head>
 <body>
 
@@ -31,9 +35,9 @@
             <div class="row">
                 <div class="col-sm-8 text-sm">
                     <div class="site-info">
-                        <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+                        <a href="#"><span class="mai-call text-primary"></span> 06 00 00 00 00</a>
                         <span class="divider">|</span>
-                        <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+                        <a href="#"><span class="mai-mail text-primary"></span> contact@health-connect.dev</a>
                     </div>
                 </div>
                 <div class="col-sm-4 text-right text-sm">
@@ -50,7 +54,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+            <a class="navbar-brand" href="#"><span class="text-primary">Health</span>Connect</a>
 
             <form action="#">
                 <div class="input-group input-navbar">
@@ -70,19 +74,19 @@
             <div class="collapse navbar-collapse" id="navbarSupport">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="/">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="doctors.html">Doctors</a>
+                        <a class="nav-link" href="/">Doctors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">News</a>
+                        <a class="nav-link" href="/">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="/">Contact</a>
                     </li>
 
 
