@@ -1,0 +1,65 @@
+composer require laravel/jetstream
+
+php artisan jetstream:install livewire
+
+npm install
+
+npm run build
+
+php artisan migrate
+
+
+----------------------------------------------------------
+
+HealthConnect
+
+
+
+----------------------------------------------------------
+
+Lahcen Ezzara
+
+lahcen@health-connect.dev
+
+lahcenezzara
+
+---------------------------
+
+Admin DEV
+
+admin@health-connect.dev
+
+admindev
+
+
+
+php artisan make:controller AdminController
+
+
+============================================================
+
+add_doctor_view.blade
+
+body_add_doctor_view.blade
+
+
+============================================================
+
+php artisan serve --port=8001
+
+
+#2A3038
+
+
+
+============================================================
+
+
+php artisan make:model Appointment --migration
+
+php artisan migrate
+
+
+============================================================
+
+
